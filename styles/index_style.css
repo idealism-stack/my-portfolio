@@ -1,0 +1,206 @@
+    /* Genralized/reset pre styles. */
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    /* body styling */
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #f0f4f8;
+        padding: 30px;
+        color: #333;
+    }
+
+    /* for <main> styling */
+    main{
+        padding: 10px;
+    }
+
+    /* for header styling */
+    header{
+        /* background-color: #fff; */
+        /* border-bottom: 1px solid #ddd; */
+        padding: 15px 30px;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+    }
+
+    /* for navigation styling */
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nav-links{
+        list-style: none;
+        display: flex;
+        gap: 20px;
+    }
+
+    .nav-links a{
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+        transition: color 0.3s;
+    }
+
+    .nav-links a:hover{
+        color: #1a73e8;
+    }
+
+    /* for class card styling */
+    .card{
+        max-width: 700px;
+        margin: 0 auto;
+        background-color: #fff;
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 0 4px 10px rgb(0, 0, 0, 0.1);
+    }
+
+    /* for  profile styling */
+    .profile{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        margin-bottom: 20px;
+    }
+
+    .profile img{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        object-fit: cover;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    /* h1 styling or in name: */
+    h1{
+        color: #555;
+        margin-bottom: 20px;
+    }
+
+    /* h2's styling */
+    h2{
+        color: #3b5998;
+        margin-bottom: 15px;
+    }
+
+    /* h3's styling */
+    h3{
+        color: #1a73e8;
+        margin-top: 30px;
+        margin-bottom: 5px;
+    }
+
+    /* paragraph and unordered list styling */
+    p, ul{
+        margin-bottom: 15px;
+        padding-left: 20px;
+        
+    }
+
+    /* list styling */
+    li{
+        margin-bottom: 6px;
+    }
+
+    /* hover in <strong> */
+    ul li strong:hover {
+        color: #1a73e8;
+        cursor: pointer;
+    }
+
+    /* styling for links */
+    p, a{
+        color: #1a73e8;
+        text-decoration: none;
+        font-weight: 500;
+        padding-right: 15px;
+    }
+
+    a:hover{
+        color: #085ece;
+    }
+
+    a:active{
+        text-decoration: underline;
+    }
+
+    /* for footer styling */
+    footer{
+        text-align: center;
+        margin-top: 40px;
+        font-size: 14px;
+        color: #888;
+    }
+
+    /* resposiveness of a website, laptop to cp */
+    @media(max-width: 600px){
+        .profile{
+            flex-direction: column;
+            text-align: center;
+        }
+
+        nav{
+            flex-direction: column;
+        }
+
+        .nav-links{
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 10px;
+        }
+    }
+
+    /* top button of js styling */
+    #topBtn{
+        display: none;
+        position: fixed;
+        bottom: 40px;
+        right: 30px;
+        z-index: 99;
+        border: none;
+        outline: none;
+        background-color: #1a73e8;
+        color: white;
+        cursor: pointer;
+        padding: 10px 15px;
+        border-radius: 8px;
+        font-size: 14px;
+    }
+
+    #topBtn:hover{
+        background-color: #0b5ed7;
+    }
+
+    /* for darkbutton styling */
+    #darkModeBtn{
+        background-color: transparent;
+        border-radius: 6px;
+    }
+
+    /* for the darkmode button effect */
+    .dark-mode{
+        background-color: #121212;
+        color: #e0e0e0;
+        
+    }
+
+    .dark-mode .card{
+        background-color: #1e1e1e;
+        box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+    }
+
+    .dark-mode a{
+        color: #90caf9;
+    }
+
+    .dark-mode #darkModeBtn{
+         background-color: transparent;
+         color: #90caf9;
+    }
